@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mypage">
+        <nav class="mynav">
+            <span id="heading">TO THE NEW</span>
+            <a href="quickHelp.html" id="helplink">Quick Help</a>
+            <a href="home.html" id="homelink">Home</a>    
+        </nav>
+
+        <div class="myformblock">
+        <header><span id="myformhead">Bug Report</span></header>
+        <form class="myform" action="index2.html">
+            
+            <div class="mytitle">
+                <label for="first">Text:*</label>
+                <input type="text" id="first" name="title"required>
+            </div>
+            <div class="mydescription">
+                <label for="second">Description:*</label>
+                <textarea name="mytext" id="second" cols="30" rows="10" name="description" required></textarea>
+            </div>
+            <div class="myOS">
+                <label for="third">Operating System:</label>
+                    <select name="myOsList" id="third">
+                      <option value="choose">Choose:</option>
+                      <option value="Linux">Linux</option>
+                      <option value="Linux">Windows</option>
+                      <option value="Linux">unix</option>
+                    </select>
+            </div>
+            <div class="myproduct">
+                <label for="fourth">Product:*</label>
+                    <select name="myProduct" id="fourth" required>
+                       <option value="">Choose:</option>
+                       <option value="Formoid">Formoid</option>
+                    </select>
+            </div>
+            <div class="myversion">
+                <label for="five">Version:*</label>
+                <input type="text" name="version" id="five" required>
+            </div>
+            <div class="mylicense">
+                <label for="six-one">License:</label>
+                <input type="radio" name="license" id="six-one">Free
+                <input type="radio" name="license" id="six-two">Business
+            </div>
+            <div class="myseverity">
+                <label for="seven">Severity:</label>
+                <select name="Severity" id="seven" name="severity">
+                    <option value="choose" name="option">Choose:</option>
+                    <option value="Critical" name="critical">Critical</option>
+                </select>
+            </div>
+            <div class="myfile">
+                <label for="eight">Attachment:</label>
+                 <input type="file" name="myfile" id="eight">
+            </div>
+            <div class="footer">
+                <input type="submit" value="Send" id="mysendbutton">
+           </div>
+            
+       </form>
+       
+       </div>
+    </div>
+</body>
+</html>
